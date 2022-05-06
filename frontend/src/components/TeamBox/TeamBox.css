@@ -1,0 +1,55 @@
+.team-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .team-container img {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    border-radius: 20px;
+    transform: scale(1);
+    /* box-shadow: 0px 0px 10px 10px rgb(212 8 140 / 60%); */
+    transition: all 0.2s linear;
+  }
+
+  .team-container img:hover {
+    transform: scale(1.05);
+    transition: all 0.2s linear;
+  }
+
+  .team-content {
+    height: 300px;
+    /* background: linear-gradient(0deg, rgba(141, 19, 155, 0.7) 0%, rgba(255, 255, 255, 0) 100%); */
+    /* background: linear-gradient(0deg, rgba(0, 0, 31, 0.7) 0%, rgba(255, 255, 255, 0) 100%); */
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px 20px 20px;
+  }
+
+  .team-content .member-name {
+    font-size: 30px;
+    font-family: brlnsr;
+  } 
+  .team-content span {
+    font-size: 20px;
+    font-family: brlnsr;
+    text-align: justify;
+  }
+
+  .team-content .row {
+    flex-direction: row;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .team-content .row:nth-child(3),
+    .team-content .row:nth-child(5) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .team-content .member-specification {
+    text-align: justify;
+  }

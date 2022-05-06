@@ -1,0 +1,63 @@
+.map-content {
+    width: 75%;
+    margin: auto;
+    background-size: 100% 100% !important;
+}
+
+.map-content .map-icon {
+    width: 71%;
+    aspect-ratio: 1;
+    margin: 40px;
+    background-color: #6E33B2CC;
+    border-radius: 50%;
+    border: solid 1px white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-content .map-icon h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.map-content .map-icon h3 {
+    /* font-family: 'Varela Round'; */
+    font-family: sans-serif;
+    margin: 0;
+    color: #E94DAA;
+    line-height: 20px;
+}
+
+.map-content ul {
+    list-style-type:none;
+    /* font-family: "Roboto, sans-serif"; */
+}
+
+.map-content ul li {
+    font-family: sans-serif;
+    font-size: 20px;
+    list-style:none;
+}
+
+.map-content .left li::before {
+    content: '\2022';
+    margin-right: 10px;
+}
+
+.map-content .right li::after {
+    content: '\2022';
+    margin-left: 10px;
+}
+  
+@media only screen and (max-width: 768px) {
+    .map-content {
+        background: transparent !important;
+    }
+    .map-content .row:nth-child(2),
+    .map-content .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+}

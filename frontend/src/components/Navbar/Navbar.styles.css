@@ -1,0 +1,108 @@
+.navbar_container {
+  background-color: black;
+  width: 100%;
+  height: 15vh;
+  color: white;
+  margin: 0;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: right;
+  align-items: center;
+  font-size: 10px;
+  /* font-style: italic; */
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  transition: 0.15s;
+  text-transform: uppercase;
+  font-family: brlnsr;
+  /* width: 80%; */
+  /* margin-top: auto; */
+  /* position: relative; */
+}
+.MuiDialog-container .MuiDialogTitle-root,
+.MuiDialog-container .MuiSvgIcon-root,
+.MuiDialog-container .MuiButton-label {
+  color: white !important;
+}
+.routes_list {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  /* margin-right: 3rem; */
+}
+.routes_list p {
+  margin: 0;
+  margin-left: 15px;
+}
+.nav_logo {
+  height: 12vh;
+  object-fit: contain;
+  cursor: pointer;
+  width: 150px;
+  filter: invert(1);
+}
+
+.nav_icons {
+  /* margin-left: 1rem; */
+}
+.nav_icons svg {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.route_item {
+  font-size: 0.9rem;
+}
+.route_item:hover {
+  cursor: pointer;
+  color: yellow;
+  transition: 1s;
+  /* color: #bfc500; */
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: yellow;
+  transition: 1s;
+  /* color: #bfc500; */
+}
+.nav_mob__icon {
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
+}
+.nav_mob {
+  position: relative;
+  display: none;
+}
+.nav_mob__menu {
+  overflow: hidden;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+  transition: 850ms;
+  background-color: black;
+  width: 100vw;
+  height: 30vh;
+}
+.active {
+  height: 30vh;
+}
+@media only screen and (max-width: 768px) {
+  .routes_list {
+    display: none;
+  }
+  .nav_mob {
+    display: flex;
+    align-items: center;
+  }
+}
