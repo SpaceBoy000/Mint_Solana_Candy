@@ -45,3 +45,5 @@ yarn-error.log*
 .vscode
 
 *.lock
+
+tsconfig.json
